@@ -1,0 +1,29 @@
+{
+  "rules": [
+    " You can attempt all the problem statements but only the best solution will be selected.",
+    " If any team is caught cheating or using any AI Bot, the respective team will be disqualified.",
+    " Abstract submission will be 3 weeks before the event day.",
+    " Participants will be given 2 weeks to prepare their presentation.",
+    " Participants will have to present their prototypes if made to the judges. So, prototype building is encouraged.",
+    " Participants must bring their registration receipts, college ID and various things which will be duly informed while coming to event.",
+    " Participants should present a working prototype on the day of the event as no machinery or technical equipment will be provided.",
+    " Rules may be changed without prior intimation. Participants are requested to check the website regularly for updates.",
+    " During the events participants will have to obey the directives given by the event head and Mindspark Team.  "
+  ],
+  "faqs": [
+    "You can attempt all the problem statements but only the best solution will be selected.",
+    "If any team is caught cheating or using any AI Bot, the respective team will be disqualified.",
+    "Abstract submission will be 3 weeks before the event day.",
+    "Participants will be given 2 weeks to prepare their presentation.",
+    "Participants will have to present their prototypes if made to the judges. So, prototype building is encouraged.",
+    "Participants must bring their registration receipts, college ID and various things which will be duly informed, while coming to event.",
+    "Participants should present a working prototype on the day of the event as no machinery or technical equipment will be provided.",
+    "Rules may be changed without prior intimation. Participants are requested to check the website regularly for updates.",
+    "During the events participants will have to obey the directives given by the event head and Mindspark Team."
+  ],
+  "structure": {
+    "Round 1": "Abstract submission",
+    "Round 2": "Power point Presentation (Bonus Points for Prototype)."
+  },
+  "problemStatements": ["waht is 2 + 2", "why are ui bitch"]
+}
