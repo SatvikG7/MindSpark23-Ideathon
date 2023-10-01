@@ -60,7 +60,8 @@ body {
   filter: drop-shadow(0px 0px 8px #fff);
 }
 .st1 {
-  font-size: 2vw;
+  font-size: 1.5rem;
+  color: khaki;
   font-family: "Montserrat";
 }
 .about {
@@ -76,7 +77,7 @@ body {
   margin: auto;
 }
 .about p {
-  font-size: 1rem;
+  font-size: 1.25rem;
   width: 50%;
   text-align: center;
   color: #fff;
@@ -105,6 +106,7 @@ body {
   font-family: "Montserrat";
   font-size: 2rem;
 }
+
 .spark {
   position: absolute;
   width: 30px;

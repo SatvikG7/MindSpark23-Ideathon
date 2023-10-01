@@ -19,7 +19,7 @@
   --blend-color-2: transparent;
   --blend-color-3: transparent;
   --blend-color-4: transparent;
-  --blend-color-5: #af4949;
+  --blend-color-5: #392476;
 }
 
 *,
@@ -107,7 +107,7 @@ body {
 
 .glitch .glitch__title {
   font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
+  font-size: 1.25rem;
   color: #ffffff;
   position: relative;
   text-transform: uppercase;

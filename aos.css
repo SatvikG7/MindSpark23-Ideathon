@@ -1,0 +1,10 @@
+.aos {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 1s;
+}
+
+.aos-animate {
+  transform: translate(0);
+  opacity: 1;
+}
