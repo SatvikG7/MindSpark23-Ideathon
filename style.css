@@ -56,12 +56,13 @@ body {
   margin: 24px;
 }
 .sponsors img {
-  width: 25vw;
-  filter: drop-shadow(0px 0px 8px #fff);
+  width: 30vw;
+  filter: drop-shadow(0px 0px 5px #e5fffe);
 }
 .st1 {
-  font-size: 2vw;
-  font-family: "Montserrat";
+  font-size: x-large;
+  font-family: "Satoshi";
+  color: white;
 }
 .about {
   width: 67%;
@@ -130,4 +131,18 @@ body {
   .glitch {
     height: 12vh !important;
   }
+}
+
+img.registerBtn.btn {
+  scale: 2.5;
+}
+
+.btn-check:checked + .btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check) + .btn:active {
+  color: initial;
+  background-color: initial;
+  border-color: transparent;
 }
