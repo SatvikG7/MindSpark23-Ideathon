@@ -1,7 +1,7 @@
 const CLASSES = {
-    "regiterLink": "registerBtn"
+    "registerLink": "registerBtn"
 }
-const registerBtn = document.querySelector("." + CLASSES.regiterLink);
+const registerBtn = document.querySelector("." + CLASSES.registerLink);
 console.log({ registerBtn })
 registerBtn.addEventListener("click", function (e) {
     e.preventDefault();
