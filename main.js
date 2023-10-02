@@ -35,12 +35,14 @@ const displayStructure = (structure) => {
 	const structureContainer = document.querySelector(
 		"." + CLASSES.structureContainer
 	);
-	const structureHeader = Render.component("h3", { innerText: "Structure" });
+	const structureHeader = Render.component("p", { innerText: "Structure", className: 'struct structure-header' });
 	structureContainer.append(structureHeader);
+	const className = "struct structure-round";
 	for (const round in structure) {
 		const text = round + ": " + structure[round];
-		const item = Render.component("h3", { innerText: text });
+		const item = Render.component("p", { innerText: text });
 		structureContainer.append(item);
+		item.className = className;
 	}
 };
 const displayProblemStatements = (problemStatements) => {

@@ -29,7 +29,7 @@
 }
 
 body {
-  background-color: #1D1E22;
+  background-color: #1d1e22;
   margin: 0;
   padding: 0;
 }
@@ -58,7 +58,7 @@ body {
   position: absolute;
 }
 
-.glitch .glitch__item:nth-child(n+2) {
+.glitch .glitch__item:nth-child(n + 2) {
   opacity: 0;
   animation-duration: var(--time-anim);
   animation-delay: var(--delay-anim);
@@ -91,7 +91,6 @@ body {
 }
 
 @keyframes glitch-anim-flash {
-
   0%,
   5% {
     opacity: 0.2;
@@ -111,6 +110,8 @@ body {
   color: #ffffff;
   position: relative;
   text-transform: uppercase;
+  text-align: center;
+  width: 65%;
 }
 
 .glitch .glitch__title:before,
@@ -371,7 +372,8 @@ body {
 @keyframes glitch-anim-4 {
   0% {
     opacity: 1;
-    transform: translate3d(0, calc(-1 * var(--gap-vertical)), 0) scale3d(-1, -1, 1);
+    transform: translate3d(0, calc(-1 * var(--gap-vertical)), 0)
+      scale3d(-1, -1, 1);
     -webkit-clip-path: polygon(0 1%, 100% 1%, 100% 3%, 0 3%);
     clip-path: polygon(0 1%, 100% 1%, 100% 3%, 0 3%);
   }
@@ -468,7 +470,8 @@ body {
 
   21.9% {
     opacity: 1;
-    transform: translate3d(0, calc(-1 * var(--gap-vertical)), 0) scale3d(-1, -1, 1);
+    transform: translate3d(0, calc(-1 * var(--gap-vertical)), 0)
+      scale3d(-1, -1, 1);
   }
 
   22%,
