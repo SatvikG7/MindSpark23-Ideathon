@@ -19,7 +19,9 @@ body {
   font-size: 15px;
   background: var(--secondary);
 }
-
+.realRegisterBtn {
+  user-select: none;
+}
 .stripe-btn {
   --text-shadow-thickness: 0.05ch;
   --text-shadow-negative-thickness: calc(-1 * var(--text-shadow-thickness));
@@ -39,7 +41,7 @@ body {
       var(--secondary),
     var(--text-shadow-negative-thickness) var(--text-shadow-negative-thickness)
       0px var(--secondary);
-  width: 50%;
+  width: 33%;
   margin: auto;
   text-align: center;
 }
