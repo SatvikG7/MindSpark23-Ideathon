@@ -11,5 +11,5 @@ registerBtn.addEventListener("click", function (e) {
     setTimeout(function () {
         open(url, "_blank");
 
-    }, 1000)
+    }, 0)
 })
