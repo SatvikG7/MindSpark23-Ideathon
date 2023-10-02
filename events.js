@@ -1,8 +1,9 @@
 const CLASSES = {
-    "registerLink": "registerBtn"
+    "registerLink": "realRegisterBtn",
+
 }
-REGISTER_URL = `https://unstop.com/p/ideathon-mindspark23-coep-technological-university-pune-maharashtra-782518`;
-const registerBtn = document.querySelector("." + CLASSES.registerLink);
+const REGISTER_URL = `https://unstop.com/p/ideathon-mindspark23-coep-technological-university-pune-maharashtra-782518`;
+const registerBtn = document.querySelector("#" + CLASSES.registerLink);
 console.log({ registerBtn })
 registerBtn.addEventListener("click", function (e) {
     e.preventDefault();

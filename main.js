@@ -17,7 +17,7 @@ const displayRules = (rules) => {
 	rules.forEach((rule) => {
 		rulesList.append(Render.component("li", { innerText: rule }));
 	});
-	const rulesHeader = Render.component("h3", { innerText: "Rules" });
+	const rulesHeader = Render.component("h3", { innerText: "Rules", className: "title-text" });
 	rulesContainer.append(rulesHeader);
 	rulesContainer.append(rulesList);
 };
@@ -27,7 +27,7 @@ const displayFaqs = (faqs) => {
 	faqs.forEach((faq) => {
 		faqsList.append(Render.component("li", { innerText: faq }));
 	});
-	const faqsHeader = Render.component("h3", { innerText: "FAQ'S" });
+	const faqsHeader = Render.component("h3", { innerText: "FAQ'S", className: "title-text" });
 	faqsContainer.append(faqsHeader);
 	faqsContainer.append(faqsList);
 };

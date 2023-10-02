@@ -75,10 +75,10 @@ transform: ${s3};
     );
 };
 
-[...document.querySelectorAll(".btn")].forEach(x => x.addEventListener("click", (e) => {
+[...document.querySelectorAll(".btn"), document.body].forEach(x => x.addEventListener("click", (e) => {
     const center = { x: e.pageX, y: e.pageY };
     makeBurst(center);
-}))
+}));
 
 const makeBurst = (center) => {
     for (let i = 0; i < 8; i++) {
