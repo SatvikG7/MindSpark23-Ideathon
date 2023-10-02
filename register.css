@@ -21,6 +21,7 @@ body {
 }
 .realRegisterBtn {
   user-select: none;
+  cursor: pointer;
 }
 .stripe-btn {
   --text-shadow-thickness: 0.05ch;
