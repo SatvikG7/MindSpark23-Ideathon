@@ -19,7 +19,7 @@ body {
   font-size: 15px;
   background: var(--secondary);
 }
-.realRegisterBtn {
+#realRegisterBtn {
   user-select: none;
   cursor: pointer;
 }
