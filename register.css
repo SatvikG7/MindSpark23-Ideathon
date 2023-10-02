@@ -1,191 +1,129 @@
-:root {
-  --primary: hsl(43, 83%, 72%);
-  --secondary: hsl(224, 20%, 17%);
-}
-
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap");
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body {
-  height: 100vh;
-  width: 100%;
-  display: grid;
-  place-items: center;
-  font-size: 15px;
-  background: var(--secondary);
-}
-#realRegisterBtn {
-  user-select: none;
-  cursor: pointer;
-}
-.stripe-btn {
-  --text-shadow-thickness: 0.05ch;
-  --text-shadow-negative-thickness: calc(-1 * var(--text-shadow-thickness));
-  position: relative;
-  padding: 1rem 2rem;
-  border: 2px solid var(--primary);
-  font-size: 3rem;
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  color: var(--primary);
-  text-transform: uppercase;
-  text-shadow: var(--text-shadow-thickness) var(--text-shadow-thickness) 0px
-      var(--secondary),
-    var(--text-shadow-thickness) var(--text-shadow-negative-thickness) 0px
-      var(--secondary),
-    var(--text-shadow-negative-thickness) var(--text-shadow-thickness) 0px
-      var(--secondary),
-    var(--text-shadow-negative-thickness) var(--text-shadow-negative-thickness)
-      0px var(--secondary);
-  width: 33%;
-  margin: auto;
+.outbutton {
+  max-width: 100%;
   text-align: center;
 }
 
-.corners {
-  --corner-dimension: 0.7ch;
-  --corner-thickness: 3px;
-  --corner-negative-thickness: calc(-1 * var(--corner-thickness));
+.corner-button:before,
+.corner-button span:before,
+.corner-button:after,
+.corner-button span:after {
+  display: block;
+  content: "";
+  width: 15px;
+  height: 15px;
   position: absolute;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.corner-button {
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 5px;
+  text-align: center;
+  position: relative;
+  min-width: 100px;
+  min-height: 10px;
+  margin: 20px;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  color: #25ccf7;
+  border-radius: 10px;
+  padding: 12px 20px;
+  box-sizing: content-box;
+  border: 5px solid transparent;
+  text-align: center;
+  line-height: 30px;
+  transition: 0.75s ease;
+  background-color: #4600a2;
+}
+
+.corner-button:before {
+  top: -2px;
+  left: -2px;
+  border-top: 4px solid #0fbcf9;
+  border-top-left-radius: 8px;
+  border-left: 4px solid #0fbcf9;
+  transition: 0.75s all;
+}
+
+.corner-button:after {
+  top: -2px;
+  right: -2px;
+  border-top: 4px solid #0fbcf9;
+  border-top-right-radius: 8px;
+  border-right: 4px solid #0fbcf9;
+  transition: 0.75s all;
+}
+
+.corner-button span {
+  display: block;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-left: 8px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.corner-button span:before {
+  bottom: -2px;
+  left: -2px;
+  border-bottom: 4px solid #0fbcf9;
+  border-bottom-left-radius: 8px;
+  border-left: 4px solid #0fbcf9;
+  transition: 0.75s all;
+}
+
+.corner-button span:after {
+  bottom: -2px;
+  right: -2px;
+  border-bottom: 4px solid #0fbcf9;
+  border-bottom-right-radius: 8px;
+  border-right: 4px solid #0fbcf9;
+  transition: 0.75s all;
+}
+
+.corner-button:hover {
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+.corner-button:hover:before,
+.corner-button:hover:after {
+  border-color: #1b9cfc;
   width: 100%;
   height: 100%;
-  top: 0;
-  left: 0;
+  border-radius: 10px;
 }
 
-.corners > i {
-  content: "";
-  position: absolute;
-  width: var(--corner-dimension);
-  height: var(--corner-dimension);
+.corner-button:hover span:before,
+.corner-button:hover span:after {
+  border-color: #1b9cfc;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
 }
 
-.corners > i:nth-child(1) {
-  top: 0;
-  left: 0;
-  box-shadow: inset var(--corner-thickness) var(--corner-thickness) 0
-    var(--primary);
+button:hover span::before,
+button:hover span::after {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
 }
 
-.corners > i:nth-child(2) {
-  top: 0;
-  right: 0;
-  box-shadow: inset var(--corner-negative-thickness) var(--corner-thickness) 0
-    var(--primary);
-}
 
-.corners > i:nth-child(3) {
-  bottom: 0;
-  right: 0;
-  box-shadow: inset var(--corner-negative-thickness)
-    var(--corner-negative-thickness) 0 var(--primary);
-}
+@media screen and (max-width: 768px) {
 
-.corners > i:nth-child(4) {
-  bottom: 0;
-  left: 0;
-  box-shadow: inset var(--corner-thickness) var(--corner-negative-thickness) 0
-    var(--primary);
-}
+  .corner-button {
+    letter-spacing: 2px;
+    padding: 6px 10px;
+  }
 
-.stripes {
-  --stripes-position: 0.3ch;
-  content: "";
-  position: absolute;
-  display: flex;
-  justify-content: space-between;
-  height: calc(100% - var(--stripes-position) * 2);
-  width: calc(100% - var(--stripes-position) * 2);
-  top: var(--stripes-position);
-  left: var(--stripes-position);
-  overflow: hidden;
-}
+  .corner-button span {
+    font-size: 18px;
+  }
 
-.stripes > i {
-  content: "";
-  height: calc(100% + 2ch);
-  width: 0.5ch;
-  background: var(--primary);
-  opacity: 0.3;
-  transform: translateY(-1ch) rotate(37deg);
-  transition: all 0.2s cubic-bezier(0.85, 0, 0.15, 1);
-}
-
-.stripes > i:nth-child(1) {
-  transition-delay: 0.02s;
-}
-.stripes > i:nth-child(2) {
-  transition-delay: 0.04s;
-}
-.stripes > i:nth-child(3) {
-  transition-delay: 0.06s;
-}
-.stripes > i:nth-child(4) {
-  transition-delay: 0.08s;
-}
-.stripes > i:nth-child(5) {
-  transition-delay: 0.1s;
-}
-.stripes > i:nth-child(6) {
-  transition-delay: 0.12s;
-}
-.stripes > i:nth-child(7) {
-  transition-delay: 0.14s;
-}
-.stripes > i:nth-child(8) {
-  transition-delay: 0.16s;
-}
-.stripes > i:nth-child(9) {
-  transition-delay: 0.18s;
-}
-.stripes > i:nth-child(10) {
-  transition-delay: 0.2s;
-}
-.stripes > i:nth-child(11) {
-  transition-delay: 0.22s;
-}
-.stripes > i:nth-child(12) {
-  transition-delay: 0.24s;
-}
-.stripes > i:nth-child(13) {
-  transition-delay: 0.26s;
-}
-.stripes > i:nth-child(14) {
-  transition-delay: 0.28s;
-}
-.stripes > i:nth-child(15) {
-  transition-delay: 0.3s;
-}
-.stripes > i:nth-child(16) {
-  transition-delay: 0.32s;
-}
-.stripes > i:nth-child(17) {
-  transition-delay: 0.34s;
-}
-.stripes > i:nth-child(18) {
-  transition-delay: 0.36s;
-}
-.stripes > i:nth-child(19) {
-  transition-delay: 0.38s;
-}
-.stripes > i:nth-child(20) {
-  transition-delay: 0.4s;
-}
-
-.stripe-btn:hover .stripes > i {
-  opacity: 0.5;
-}
-
-span {
-  position: relative;
-  z-index: 10000;
-}
-
-span {
-  font-size: 2rem;
 }
