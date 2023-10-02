@@ -5,22 +5,7 @@
 }
 
 @font-face {
-  font-family: "Satoshi";
-  src: url("fonts/Satoshi-Black.ttf");
-  /* src: url("fonts/Satoshi-Black.woff") format("woff"); */
-}
-@font-face {
-  font-family: "Girloy-Bold";
-  src: url("fonts/Gilroy-Bold.ttf");
-  /* src: url("fonts/Satoshi-Black.woff") format("woff"); */
-}
-@font-face {
   font-family: "Girloy-Regular";
   src: url("fonts/Gilroy-Regular.ttf");
-  /* src: url("fonts/Satoshi-Black.woff") format("woff"); */
-}
-@font-face {
-  font-family: "Girloy-Medium";
-  src: url("fonts/Gilroy-Medium.ttf");
   /* src: url("fonts/Satoshi-Black.woff") format("woff"); */
 }
