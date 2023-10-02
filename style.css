@@ -129,6 +129,9 @@ img.registerBtn.text {
     box-sizing: border-box;
     font-size: 3vw;
   }
+  #realRegisterBtn {
+    width: 60%;
+  }
   .sponsors img {
     width: 40vw;
   }
