@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 @font-face {
@@ -42,17 +42,6 @@ body {
 
 .header img {
   width: 100%;
-  animation: rotate-hue 10s infinite;
-}
-
-@keyframes rotate-hue {
-  0% {
-    filter: hue-rotate(0deg);
-  }
-
-  100% {
-    filter: hue-rotate(360deg);
-  }
 }
 
 .title {
@@ -105,7 +94,7 @@ body {
 }
 
 .about {
-  width: 67%;
+  width: 67vw;
   position: relative;
   display: flex;
   align-items: center;
@@ -127,9 +116,32 @@ body {
   position: absolute;
 }
 
+.prize {
+  width: 67vw;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.prize img {
+  width: 100%;
+  margin: auto;
+}
+
+.prize p {
+  font-size: 1.5rem;
+  width: 50%;
+  text-align: center;
+  color: #fff;
+  font-family: "Montserrat";
+  position: absolute;
+}
+
 .problem-statements {
   margin: 0 auto;
-  width: 67%;
+  width: 67vw;
   overflow: hidden;
 }
 
@@ -152,6 +164,12 @@ body {
   font-size: 2rem;
 }
 
+.structure,
+.rules,
+.faqs {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .spark {
   position: absolute;
   width: 30px;
@@ -169,27 +187,29 @@ img.registerBtn.text {
   scale: 2;
 }
 
-p.struct.structure-header {
+.structure-header {
   color: #eeebee;
-  font-family: "Girloy-Regular";
-  font-weight: 900;
   font-size: 2rem;
   font-style: normal;
-  font-weight: 700;
-  line-height: 37px;
 }
 
 ol li {
-  font-size: 1.25rem;
+  font-size: 1.33rem;
 }
 
-p.struct.structure-round {
-  font-family: "Girloy-Regular";
-  font-size: 1.5rem;
+.structure-round {
+  font-size: 1.33rem;
 }
 
 h3.title-text {
   font-size: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .problem-statements,
+  .about {
+    width: 90vw;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -198,6 +218,10 @@ h3.title-text {
     padding: 0;
     box-sizing: border-box;
     font-size: 3vw;
+  }
+
+  .title {
+    font-size: 8vw;
   }
 
   .st1 {
@@ -218,7 +242,7 @@ h3.title-text {
 
   .problem-statements,
   .about {
-    width: 96%;
+    width: 96vw;
   }
 
   .about p {
@@ -226,6 +250,6 @@ h3.title-text {
   }
 
   .glitch {
-    height: 12vh !important;
+    height: auto !important;
   }
 }

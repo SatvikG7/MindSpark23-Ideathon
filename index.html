@@ -12,7 +12,6 @@
             crossorigin="anonymous"
         />
         <link rel="stylesheet" href="style.css" />
-        <link rel="stylesheet" href="fonts.css" />
         <link rel="stylesheet" href="style.css" />
         <link rel="stylesheet" href="aos.css" />
         <link rel="stylesheet" href="register.css" />
@@ -23,20 +22,28 @@
         <div class="main">
             <div class="wrapper">
                 <div class="header">
-                    <img
-                        src="./assets/header-bg.png"
-                        alt="IDEATHON"
-                        draggable="false"
-                    />
+                    <picture>
+                        <source
+                            media="(min-width: 768px)"
+                            srcset="./assets/header-bg.png"
+                        />
+                        <img
+                            src="./assets/header-mobile.png"
+                            alt="IDEATHON"
+                            draggable="false"
+                        />
+                    </picture>
                     <h1 class="title">IDEATHON</h1>
                 </div>
                 <div class="sponsors">
                     <p class="st1">Presented by</p>
-                    <img
-                        src="./assets/AutoMech.png"
-                        alt="AutoMech"
-                        draggable="false"
-                    />
+                    <a href="https://www.automech.global/">
+                        <img
+                            src="./assets/AutoMech.png"
+                            alt="AutoMech"
+                            draggable="false"
+                        />
+                    </a>
                 </div>
             </div>
 
@@ -46,6 +53,11 @@
                     An idea is all it takes to bring revolution, do you have
                     what it takes to win this marathon of ideas?
                 </p>
+            </div>
+
+            <div class="prize">
+                <img src="./assets/about-bg.png" alt="prize" />
+                <p>Prize Pool: ₹ 1,00,000/-</p>
             </div>
 
             <div class="outbutton">
@@ -78,37 +90,37 @@
                     >
                         <div class="row">
                             <div class="col-md-4 col-sm-12">
-                                <h3>CONTACT US</h3>
+                                <h4>CONTACT US</h4>
                                 <hr style="margin-top: 5px" />
-                                <h5>
+                                <h6>
                                     <span>☏</span> Kshitij Nazirkar: +91 76668
                                     29930
                                     <hr />
                                     <span>☏</span> Rugved Kajgikar: +91 90228
                                     66392
                                     <hr />
-                                </h5>
+                                </h6>
                             </div>
                             <div class="col-md-4 col-sm-12">
-                                <h3>ABOUT US</h3>
+                                <h4>ABOUT US</h4>
                                 <hr style="margin-top: 5px" />
-                                <h5>
+                                <h6>
                                     MindSpark is the annual national level
                                     technical festival of
                                     <br />
                                     College of Engineering, Pune(COEP).
-                                </h5>
+                                </h6>
                                 <hr />
                             </div>
                             <div class="col-md-4 col-sm-12">
-                                <h3>VISIT US</h3>
+                                <h4>VISIT US</h4>
                                 <hr style="margin-top: 5px" />
                                 <!-- <br /> -->
-                                <h5>
+                                <h6>
                                     MindSpark Office, above Main Auditorium,<br />
                                     COEP, Wellesley Road, <br />Shivaji Nagar,
                                     Pune.
-                                </h5>
+                                </h6>
                                 <hr />
                             </div>
                         </div>
@@ -119,5 +131,9 @@
         <script src="main.js" type="module" defer></script>
         <script src="events.js" type="module" defer></script>
         <script src="glitch.js" type="module" defer></script>
+        <script
+            type="module"
+            src="https://unpkg.com/@dotlottie/player-component@1.0.0/dist/dotlottie-player.js"
+        ></script>
     </body>
 </html>
