@@ -1,4 +1,3 @@
-
 let styleSheet = null;
 
 const SPARK_ELEMENT_WIDTH = 30;
@@ -53,8 +52,7 @@ Explaining the transform rules
 
     const [s1, s2, s3] = createTransformSteps(
         `translate(-50%, -50%) rotate(${rotation}deg) translate(10px, 0px)`,
-        `translate(${DISTANCE + randomDist
-        }px, 0px) scale(0.5, 0.5)`,
+        `translate(${DISTANCE + randomDist}px, 0px) scale(0.5, 0.5)`,
         `translate(${SPARK_ELEMENT_WIDTH / 2}px, 0) scale(0, 0)`
     );
 
@@ -75,10 +73,12 @@ transform: ${s3};
     );
 };
 
-[...document.querySelectorAll(".btn"), document.body].forEach(x => x.addEventListener("click", (e) => {
-    const center = { x: e.pageX, y: e.pageY };
-    makeBurst(center);
-}));
+[...document.querySelectorAll(".btn"), document.body].forEach((x) =>
+    x.addEventListener("click", (e) => {
+        const center = { x: e.pageX, y: e.pageY };
+        makeBurst(center);
+    })
+);
 
 const makeBurst = (center) => {
     for (let i = 0; i < 8; i++) {

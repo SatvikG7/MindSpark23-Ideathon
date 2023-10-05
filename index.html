@@ -41,6 +41,7 @@
                         <img
                             src="./assets/AutoMech.png"
                             alt="AutoMech"
+                            title="Automech"
                             draggable="false"
                         />
                     </a>
@@ -48,7 +49,16 @@
             </div>
 
             <div class="about">
-                <img src="./assets/about-bg.png" alt="about" />
+                <dotlottie-player
+                    src="assets/ideathon.lottie"
+                    background="transparent"
+                    speed="1"
+                    style="width: 400px; height: 400px"
+                    direction="1"
+                    mode="normal"
+                    loop
+                    autoplay
+                ></dotlottie-player>
                 <p>
                     An idea is all it takes to bring revolution, do you have
                     what it takes to win this marathon of ideas?
@@ -56,8 +66,20 @@
             </div>
 
             <div class="prize">
-                <img src="./assets/about-bg.png" alt="prize" />
-                <p>Prize Pool: ₹ 1,00,000/-</p>
+                <dotlottie-player
+                    src="assets/trophy.lottie"
+                    background="transparent"
+                    speed="1"
+                    style="width: 200px; height: 200px"
+                    direction="1"
+                    mode="normal"
+                    loop
+                    autoplay
+                ></dotlottie-player>
+                <span>
+                    <h3>Prize Pool</h3>
+                    <h1>₹ 1,00,000</h1>
+                </span>
             </div>
 
             <div class="outbutton">
@@ -66,15 +88,9 @@
                 </button>
             </div>
             <div class="problem-statements"></div>
-            <div
-                class="structure aos"
-            ></div>
-            <div
-                class="rules aos"
-            ></div>
-            <div
-                class="faqs aos"
-            ></div>
+            <div class="structure aos"></div>
+            <div class="rules aos"></div>
+            <div class="faqs aos"></div>
             <div class="footer">
                 <footer id="contact">
                     <div
@@ -129,8 +145,8 @@
         <script src="events.js" type="module" defer></script>
         <script src="glitch.js" type="module" defer></script>
         <script
+            src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
             type="module"
-            src="https://unpkg.com/@dotlottie/player-component@1.0.0/dist/dotlottie-player.js"
         ></script>
     </body>
 </html>
