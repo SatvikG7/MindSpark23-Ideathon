@@ -35,7 +35,7 @@ const displayStructure = (structure) => {
 	const structureContainer = document.querySelector(
 		"." + CLASSES.structureContainer
 	);
-	const structureHeader = Render.component("p", { innerText: "Structure", className: 'struct structure-header' });
+	const structureHeader = Render.component("h3", { innerText: "Structure", className: 'struct structure-header' });
 	structureContainer.append(structureHeader);
 	const className = "struct structure-round";
 	for (const round in structure) {

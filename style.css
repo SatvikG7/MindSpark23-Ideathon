@@ -168,6 +168,12 @@ body {
 .rules,
 .faqs {
   font-family: Arial, Helvetica, sans-serif;
+  background:linear-gradient(90deg,rgb(0, 0, 0),rgb(42, 30, 84));
+  width: 90vw;
+  margin: 48px auto;
+  border-radius: 0.5rem;
+  padding: 16px;
+  color: #fff;
 }
 
 .spark {
@@ -187,12 +193,6 @@ img.registerBtn.text {
   scale: 2;
 }
 
-.structure-header {
-  color: #eeebee;
-  font-size: 2rem;
-  font-style: normal;
-}
-
 ol li {
   font-size: 1.33rem;
 }
@@ -206,6 +206,7 @@ h3.title-text {
 }
 
 @media screen and (max-width: 1024px) {
+
   .problem-statements,
   .about {
     width: 90vw;
